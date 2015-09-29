@@ -8,6 +8,6 @@ setup(
     description='ModelAdmin mixin that adds edit links to Django Grappelli autocomplete lookups.',
     long_description=open('README.md').read(),
     install_requires=[
-        'django-grappelli==2.6.3',
+        'django-grappelli>=2.6.3',
     ],
 )
