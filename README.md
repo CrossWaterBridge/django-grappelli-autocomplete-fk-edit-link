@@ -2,6 +2,10 @@
 
 django-grappelli-autocomplete-fk-edit-link provides a `ModelAdmin` mixin that adds edit links to autocomplete lookups.
 
+Install using pip :
+
+	sudo pip install git+https://github.com/CrossWaterBridge/django-grappelli-autocomplete-fk-edit-link.git@master#egg=django-grappelli-autocomplete-fk-edit-link
+
 Add `grappelli_autocomplete_fk_edit_link` to your `INSTALLED_APPS`:
 
 	INSTALLED_APPS = (
@@ -12,7 +16,7 @@ Add `grappelli_autocomplete_fk_edit_link` to your `INSTALLED_APPS`:
 
 Add the mixin to any `ModelAdmin` with one or more autocomplete foreign key lookup fields:
 
-    from grappelli.autocomplete_fk_edit_link import AutocompleteEditLinkAdminMixin
+    from grappelli_autocomplete_fk_edit_link import AutocompleteEditLinkAdminMixin
     
     class MyAdmin(AutocompleteEditLinkAdminMixin, admin.ModelAdmin):
     	raw_id_fields = ['related_object']
