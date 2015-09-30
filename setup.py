@@ -4,6 +4,7 @@ setup(
     name='django-grappelli-autocomplete-fk-edit-link',
     version='1.0.0dev',
     packages=['grappelli_autocomplete_fk_edit_link',],
+    include_package_data=True,
     license='MIT',
     description='ModelAdmin mixin that adds edit links to Django Grappelli autocomplete lookups.',
     long_description=open('README.md').read(),
