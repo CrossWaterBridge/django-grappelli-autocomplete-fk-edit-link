@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='django-grappelli-autocomplete-fk-edit-link',
-    version='0.1.0',
+    version='0.1.1',
     packages=['grappelli_autocomplete_fk_edit_link',],
     include_package_data=True,
     license='MIT',
