@@ -4,7 +4,7 @@ django-grappelli-autocomplete-fk-edit-link provides a `ModelAdmin` mixin that ad
 
 Install using pip :
 
-	sudo pip install git+https://github.com/CrossWaterBridge/django-grappelli-autocomplete-fk-edit-link.git@master#egg=django-grappelli-autocomplete-fk-edit-link
+	pip install git+https://github.com/CrossWaterBridge/django-grappelli-autocomplete-fk-edit-link.git@master#egg=django-grappelli-autocomplete-fk-edit-link
 
 Add `grappelli_autocomplete_fk_edit_link` to your `INSTALLED_APPS`:
 
