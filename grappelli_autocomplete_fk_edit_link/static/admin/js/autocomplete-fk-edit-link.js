@@ -16,8 +16,13 @@
 
                     var objectID = input.val();
                     if (objectID) {
-                        var editURL = lookupURL.split('?', 1)[0] + objectID + '/';
-                        editLink = $('<a style="position:relative;top:5px;margin-left:20px;white-space:nowrap;font-weight:bold;" href="' + editURL + '">Edit</a>');
+                        var baseURL = lookupURL.split('?', 1)[0];
+                        var editURL = baseURL + objectID + '/';
+                        var addURL = baseURL + 'add/';
+                        editLink = $('<div style="position:relative;top:0px;display:inline-block;">'+
+                            '<a style="display:inline-block;width:25px;height:25px;" class="icons-tools-viewsite-link" target="_blank" title="Edit" href="' + editURL + '"></a>'+
+                            '<a style="display:inline-block;width:25px;height:25px;" class="icons-add-another" target="_blank" title="Add" href="' + addURL + '"></a>'+
+                            '</div>');
                         editLink.insertAfter(wrapper);
                     }
                 };
